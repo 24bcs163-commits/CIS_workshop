@@ -1,0 +1,22 @@
+
+# Python virtual environments
+.venv/
+venv/
+
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated simulation workspace and examination files
+exam_workspace/
+*.secure.json
+received/
+outgoing/
+
+# Cryptographic key files — never commit private keys
+*.pem
+*.key
+
+# Logs
+*.log

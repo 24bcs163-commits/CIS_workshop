@@ -1,0 +1,20 @@
+Secure Examination-Paper Exchange — Test Results
+Date: 2026-10-29
+Environment: Python 3.13.5; cryptography 46.0.4
+Command: python -m unittest discover -s tests -v
+
+Result: PASS — 8 tests passed.
+
+Covered cases:
+[PASS] Authorised recipient recovers byte-identical original file.
+[PASS] Ciphertext modification rejected; no output plaintext file created.
+[PASS] Metadata modification rejected; no output plaintext file created.
+[PASS] Signature modification rejected; no output plaintext file created.
+[PASS] Incorrect recipient private key rejected.
+[PASS] Incorrect sender public key rejected.
+[PASS] AES-GCM tag failure rejected even when the altered package is re-signed in a fault-injection test.
+[PASS] Two encryptions of the same input have different nonces, wrapped session keys, and package contents.
+[PASS] Serialized package does not contain the plaintext file bytes.
+[PASS] End-to-end separate sender/recipient-folder CLI workflow, including password-protected private-key generation, trusted public-key copies, encrypt, transfer, and decrypt.
+
+Note: The end-to-end CLI workflow is one test that validates multiple steps, so the coverage bullets above list individual scenarios and need not equal the test-case count.

@@ -1,0 +1,9 @@
+INSTITUTE CONFIDENTIAL — SAMPLE EXAMINATION PAPER
+Course: Introduction to Computer Security
+Duration: 30 minutes
+
+1. Explain the difference between confidentiality and integrity.
+2. Why should AES-GCM use a fresh nonce for each encryption with the same key?
+3. State which key is used to verify an RSA-PSS signature.
+
+This is fictitious workshop data, not a real examination paper.
