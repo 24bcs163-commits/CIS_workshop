@@ -2,6 +2,16 @@
 
 A runnable workshop implementation of hybrid encryption and signed package verification.
 
+
+## Sequence Diagram — Secure Examination-Paper Exchange
+
+The sequence diagram illustrates the complete secure communication workflow between the faculty member (sender) and the examination coordinator (recipient).
+
+It covers RSA-3072 key generation, trusted public-key exchange, AES-256-GCM file encryption, RSA-OAEP session-key protection, RSA-PSS digital signatures, transmission over an untrusted channel, signature verification, authenticated decryption, and rejection of tampered packages.
+
+![Sequence Diagram: Secure Examination-Paper Exchange](sequence_diagram.png)
+
+
 ## Security design
 
 - **RSA-3072** key pairs for the sender and recipient.
